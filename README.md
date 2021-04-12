@@ -2,7 +2,7 @@
 The editor interface for a given BikeTag game.
 
 ## Do you want to create this project?
-The BikeTag Team is seeking a developer to create and run with this project to aid the existing, manual, inadequate process that the BikeTag Team currently has for editing BikeTag Images. Since BikeTag uses Imgur, exclusively at the moment, for it's images and data, this editor would allow the BikeTag Team to make corrections to games and address issues that arise in a timely manner.
+The BikeTag Team is seeking a developer to create and run with this project to aid the existing, manual, inadequate process that the BikeTag Team currently has for editing BikeTag Images. Since BikeTag uses Imgur, exclusively at the moment, for it's images and data, this editor would allow the BikeTag Team to make corrections to games and address issues that arise in a timely manner via the [Imgur API][imgur-api].
 
 ### Project Requirements
 This project should provide the following featureset:
@@ -18,3 +18,4 @@ This project should provide the following featureset:
 Ideally, this project would be written in Vue but React is an acceptable alternative. Scaffolding can be provided for setting up a development server and build process for any desired Javascript frontend stack. To make such requests, add issues to this project and they will be recieved by the BikeTag Team.
 
 [node-imgur]: https://www.npmjs.com/package/imgur
+[imgur-api]: https://apidocs.imgur.com/
