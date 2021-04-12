@@ -1,0 +1,8 @@
+{
+    "name": "biketag-editor",
+    "version": "0.0.0-alpha",
+    "title": "The BikeTag Game editor",
+    "description": "An editor for biketag.org games",
+    "author": "Ken Eucker <keneucker@gmail.com>",
+    "license": "CC-BY-SA-4.0",
+}
