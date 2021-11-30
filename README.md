@@ -1,21 +1,25 @@
 # biketag-editor
-The editor interface for a given BikeTag game.
+The "editor" interface for BikeTag game administration, supporting admin roles and BikeTag Ambassador logins for managing BikeTag data from the Queue to Settings to Players and Tags. 
 
 ## Do you want to create this project?
-The BikeTag Team is seeking a developer to create and run with this project to aid the existing, manual, inadequate process that the BikeTag Team currently has for editing BikeTag Images. Since BikeTag uses Imgur, exclusively at the moment, for it's images and data, this editor would allow the BikeTag Team to make corrections to games and address issues that arise in a timely manner via the [Imgur API][imgur-api].
+The BikeTag Team is seeking a developer to create and run with this project to aid the existing, manual, inadequate process that the BikeTag Team currently has for editing BikeTag Images. Completion of this project would mean that the BikeTag Team can finally scale to meet the demand of new games each month without manual code deployments and developer intervention. 
 
-### Project Requirements
+## Project Requirements
 This project should provide the following featureset:
 
-1. Uses the [`node-imgur`][node-imgur] npm package, or a browser compatible Imgur API that is similarly feature-rich.
-2. Provides a login strategy using an Imgur account, to obtain access to the Imgur API credentials needed to use the imgur package.
+1. Uses the [`biketag`][biketag-api] npm package, or a browser compatible Imgur API that is similarly feature-rich.
+2. Provides a login strategy using social login with Google accounts.
 3. Provides a way to view all images within an Imgur album, paginated, and sortable by tagnumber.
-4. Provides a way to edit the title and description of a given image within a given Imgur album.
-5. Provides a way to move an image from one Imgur album to another Imgur album.
-6. Provides a way to delete a given image from a given Imgur album.
-7. Provides a way to search for an image based on values in the title or description, within a given Imgur album.
+4. Provides a way to edit the fields of a given tag of a selected game.
+5. Provides a way to verify tags, moving them from the queue album the main game album and updates the new mystery Tag data.
+6. Provides a way to delete a given tag from a selected game, which moves it to the archive album.
+7. Provides a way to search for tags based on the Tag fields.
+8. Provides a way to view and edit all of a selected game's settings in a table.
+9. Provides a way to edit players of a selected game.
+10. Provides a way for new ambassadors to be invited to a selected game by an admin role.
+11. Provies a way for new game data to be created for a new game by an admin role.
+12. Provides the sanity studio editor, a React app, on a special page used by the admin role only.
 
-Ideally, this project would be written in Vue but React is an acceptable alternative. Scaffolding can be provided for setting up a development server and build process for any desired Javascript frontend stack. To make such requests, add issues to this project and they will be recieved by the BikeTag Team.
+This project is to be written in TypeScript using Vue, and interacts with the BikeTag game server(s) purely using the biketag client API.
 
-[node-imgur]: https://www.npmjs.com/package/imgur
-[imgur-api]: https://apidocs.imgur.com/
+[biketag-api]: https://www.npmjs.com/package/biketag
